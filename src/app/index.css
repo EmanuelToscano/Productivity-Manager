@@ -1,0 +1,171 @@
+/*Done*/
+
+/* Make sure html and body take up the full viewport height */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0; /* remove default margin */
+  background-color: rgb(223, 222, 222);
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 96%; /* now it fills the whole page */
+  gap: 2px;
+  margin: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 0px 4px rgb(188, 188, 188);
+}
+
+.sidebar {
+  flex: 1;
+  background-color: #fafafa;
+  width: 100%;
+  height: 100%;
+  color: rgb(90, 90, 90);
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.goals{
+    padding-left: 33px;
+    padding-top: 33px;
+    margin-bottom: 20px;
+}
+
+.goal{
+    font-size: 20px;
+    color: black;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    display: block;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 33px;
+    cursor: pointer;
+}
+
+.goal:hover{
+    background-color: rgb(92, 255, 107);
+}
+
+.main {
+  flex: 3;
+  padding: 40px;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  font-size: 36px;
+  font-weight: 540;
+}
+
+.empty{
+    width: 500px;
+    height: 10px;
+    background-color: rgb(223, 222, 222);
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.progress-bar{
+    transition: width ease 0.3s;
+    height: 10px;
+    background-color: rgb(52, 235, 67);
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.progress{
+    margin-top: 15px;
+    font-weight: normal;
+    font-size: 22px;
+    color: rgb(97, 97, 97);
+    margin-bottom: 10px;
+}
+
+.tab{
+    background-color: transparent;
+    border: none;
+    width: 500px;
+    height: 8px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border-radius: 4px;
+    display: flex;
+    
+}
+
+.tab:hover{
+    background-color: rgb(52, 235, 67);
+    transition: background-color ease 0.5s;
+}
+
+.tab-text{
+    margin: -5px;
+}
+
+
+.tab:hover .tab-text{
+    visibility: hidden;
+}
+
+.text{
+    border-width: 0px;
+    border: none;
+    margin-bottom: 0px;
+    font-family: 'Inter', sans-serif;
+    width: 460px;
+}
+
+.text:focus{
+    outline:none!important;
+}
+
+.task{
+    display: flex;
+    flex-direction: column;
+}
+
+.task div{
+    display: flex;
+    align-items: center;
+}
+
+.check{
+    accent-color: rgb(52, 235, 67);
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+}
+
+/* show tick when checked */
+.checkbox-container input:checked + .checkmark:after {
+  display: block;
+}
+
+.remove{
+    border: none;
+    background-color: rgb(52, 235, 67);
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+}
+
+.remove:hover{
+    background-color: red;
+}
+
+.title{
+    border: none;
+    background-color: #ffffff;
+    font-size: 36px;
+    font-weight: 540;
+}
+
+.title:focus{
+    outline:none!important;
+}
